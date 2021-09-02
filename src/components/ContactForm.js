@@ -71,7 +71,7 @@ const ContactForm = () => {
   return (
     <div className="App">
       <h1>Contact Form</h1>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} data-testid="form">
         <div>
           <label htmlFor="firstName">First Name*</label>
           <input
@@ -121,7 +121,7 @@ const ContactForm = () => {
 
         {displayData && <DisplayComponent form={form}/>}
 
-        <input type="submit" />
+        <input type="submit" id ='error'/>
       </form>
     </div>
   );
